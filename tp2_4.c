@@ -32,7 +32,8 @@ int main(){
 
     }
 
-    listarPCs(compus, N);
+    listarPCs(compus,N);
+    mostrarMasVieja(compus,N);
 
     return 0;
 }
@@ -51,7 +52,30 @@ void listarPCs (Compu pcs[], int cantidad){
     }
 
 }
+
+
 void mostrarMasVieja (Compu pcs[], int cantidad) {
+    int aux=3000, i;
+    for(i=0;i<cantidad;i++)
+    {
+        if(pcs[i].anio<=aux)
+        {
+            printf("%d", pcs[i].anio);
+            aux=pcs[i].anio;
+        }
+    }
+
+    for(i=0;i<cantidad;i++)
+    {
+        if(aux==pcs[i].anio)
+        {
+            printf("\n\nLa computadora mas lenta es la N°: %d \n",i+1);
+            printf("Año de fabricacion %d\n",pcs[i].anio);
+            printf("Tipo de Procesador: %s\n", pcs[i].tipo_cpu);
+            printf("Velocidad de su Procesador: %d\n", pcs[i].velocidad);
+            printf("Cantidad de Nucleos: %d\n\n", pcs[i].cantNucleos);
+        }
+    }
 
 }
 void mostrarMasVeloz (Compu pcs[], int cantidad) {
