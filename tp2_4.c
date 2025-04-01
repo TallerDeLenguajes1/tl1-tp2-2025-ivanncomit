@@ -8,7 +8,9 @@ struct {
     char *tipo_cpu;
 } typedef Compu;
 
-
+void listarPCs (Compu pcs[], int cantidad);
+void mostrarMasVieja (Compu pcs[], int cantidad);
+void mostrarMasVeloz (Compu pcs[], int cantidad);
 
 int main(){
     int i, j, idCpu;
@@ -28,4 +30,15 @@ int main(){
 
 
     return 0;
+}
+
+
+void listarPCs (Compu pcs[], int cantidad){
+
+}
+void mostrarMasVieja (Compu pcs[], int cantidad) {
+
+}
+void mostrarMasVeloz (Compu pcs[], int cantidad) {
+
 }
