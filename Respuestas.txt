@@ -1,0 +1,8 @@
+¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+-Dentro del repositorio no se puede observar el archivo, ya que al cambiar de rama, git hace los cambios necesarios para que trabajemos en la rama que este actualmente activa.
+
+En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
+- Notamos que a pesar de que agreguemos algun archivo y "commiteemos" esos cambios y main "avance", los cambios en la rama "Opcion_2" siguen sin ser añadidos o efectuados en main.
+
+En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+-Al hacer merge considerando la rama "Opcion_2" agregamos los cambios hechos en la rama a la linea principal.
